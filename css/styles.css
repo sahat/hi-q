@@ -5,6 +5,12 @@ body {
   font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 }
 
+.title {
+  text-align: center;
+  line-height: 1;
+  font-size: 4rem;
+}
+
 .container {
   width: 555px;
   margin: 0 auto;
@@ -44,6 +50,29 @@ body {
 .cell:last-child {
   margin-right: 0;
 }
+
+.cell.peg {
+  cursor: default;
+  text-align: center;
+  font-size: 20px;
+  line-height: 65px;
+  background: #eee4da;
+  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.cell.peg.active,
+.cell.peg.active:hover {
+  color: #fff;
+  background: #f2b179;
+}
+
+.cell.peg:hover {
+  background: #ede0c8;
+}
+
 
 .hidden {
   visibility: hidden;
